@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
@@ -14,9 +13,9 @@ const SignUp = () => {
         e.preventDefault();
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            navigate('/dashboard');
+            navigate('/dashboard'); // Redirect to Dashboard after signup
         } catch (error) {
-            setError(error.message);
+            setError(error.message); // Show error message
         }
     };
 
@@ -41,12 +40,6 @@ const SignUp = () => {
                 />
                 <button type="submit">Sign Up</button>
             </form>
-            <p>
-                Already have an account? <Link to="/login">Log In</Link>
-            </p>
-            <p>
-                <Link to="/">Back to Home</Link> {/* Add a "Back to Home" link */}
-            </p>
         </div>
     );
 };
