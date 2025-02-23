@@ -1,0 +1,164 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 80px; /* Add padding to account for the fixed Header */
+  background-color: #F4F4F4; /* Light gray background */
+  color: #333; /* Dark gray text */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Dashboard Heading */
+.dashboard-heading {
+  font-size: 2.5rem;
+  color: #6C5CE7; /* Primary purple */
+  margin-bottom: 2rem;
+}
+
+/* Streak Display */
+.dashboard-streak-display {
+  font-size: 1.25rem;
+  color: #6C5CE7; /* Primary purple */
+  margin-bottom: 2rem;
+}
+
+/* Calendar Section */
+.dashboard-calendar-section {
+  background-color: white; /* White background */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Calendar Container */
+.dashboard-calendar {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  background-color: white; /* White background */
+  border-radius: 10px;
+}
+
+/* Calendar Navigation */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  background-color: #6C5CE7; /* Primary purple */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #5a4ad1; /* Slightly darker purple */
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #ccc; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Calendar Tiles */
+.react-calendar__tile {
+  padding: 0.75rem;
+  border-radius: 50%;
+  background-color: white; /* White background */
+  color: #333; /* Dark gray text */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__tile--now {
+  background-color: #6C5CE7; /* Primary purple */
+  color: white; /* White text */
+}
+
+.react-calendar__tile--active {
+  background-color: #6C5CE7; /* Primary purple */
+  color: white; /* White text */
+}
+
+.react-calendar__tile:hover {
+  background-color: #5a4ad1; /* Slightly darker purple */
+  color: white; /* White text */
+}
+
+/* Completed Days */
+.dashboard-calendar-completed {
+  background-color: #4CAF50; /* Green for completed days */
+  color: white; /* White text */
+}
+
+/* Incomplete Days */
+.dashboard-calendar-incomplete {
+  background-color: #ccc; /* Gray for incomplete days */
+  color: white; /* White text */
+}
+
+/* Notes Indicator */
+.dashboard-calendar-note {
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+/* Legend */
+.dashboard-calendar-legend {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333; /* Dark gray text */
+}
+
+/* Link to Profile */
+.dashboard-link {
+  margin-top: 1rem;
+  color: #6C5CE7; /* Primary purple */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.dashboard-link:hover {
+  color: #5a4ad1; /* Slightly darker purple */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+    padding-top: 80px; /* Maintain padding for Header */
+  }
+
+  .dashboard-heading {
+    font-size: 2rem;
+  }
+
+  .dashboard-streak-display {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-streak-display {
+    font-size: 0.9rem;
+  }
+}
