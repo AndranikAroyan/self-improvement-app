@@ -1,0 +1,79 @@
+/* Profile Container */
+.profile-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .profile-container h2 {
+    font-size: 2rem;
+    color: #6C5CE7; /* Purple heading */
+    margin-bottom: 1rem;
+  }
+  
+  /* User Details */
+  .user-details {
+    margin-bottom: 2rem;
+  }
+  
+  .user-details p {
+    font-size: 1.25rem;
+    color: #333; /* Dark gray text */
+    margin: 0.5rem 0;
+  }
+  
+  /* Edit Form */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .profile-input {
+    padding: 0.75rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    background-color: white; /* White background */
+    color: #333; /* Dark text */
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .profile-input::placeholder {
+    color: #999; /* Light placeholder text */
+  }
+  
+  /* Buttons */
+  .edit-button,
+  .save-button,
+  .back-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #6C5CE7; /* Primary color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .edit-button:hover,
+  .save-button:hover,
+  .back-button:hover {
+    background-color: #5a4ad1; /* Slightly darker primary color */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .back-button {
+    background-color: transparent;
+    color: #6C5CE7; /* Primary color */
+    border: 2px solid #6C5CE7; /* Primary color */
+  }
+  
+  .back-button:hover {
+    background-color: #6C5CE7; /* Primary color */
+    color: white; /* White text on hover */
+  }

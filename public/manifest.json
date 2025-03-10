@@ -1,0 +1,8 @@
+{
+  "name": "Self-Improvement App",
+  "short_name": "Self-Improvement",
+  "theme_color": "#6C5CE7",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "."
+}

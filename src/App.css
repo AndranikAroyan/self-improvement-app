@@ -1,0 +1,49 @@
+/* Import Roboto Slab from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: auto; /* Ensure scrolling is enabled */
+}
+
+#root {
+  height: 100%;
+}
+
+/* Apply Roboto Slab as the default font */
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: white; /* White background */
+  color: #333; /* Dark gray text */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: #6C5CE7; /* Purple headings */
+}
+
+/* Buttons */
+button {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700; /* Bold for buttons */
+}
+
+/* Links */
+a {
+  font-family: 'Roboto Slab', serif;
+  color: #6C5CE7; /* Purple links */
+  text-decoration: none;
+  font-weight: 700; /* Bold for links */
+}
+
+a:hover {
+  text-decoration: underline;
+}
