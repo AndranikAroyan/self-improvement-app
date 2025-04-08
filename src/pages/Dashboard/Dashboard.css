@@ -1,0 +1,288 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  padding-top: 80px;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Dashboard Heading */
+.dashboard-heading {
+  font-size: 2.5rem;
+  color: #6c5ce7;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Streak Display */
+.dashboard-streak-display {
+  font-size: 1.25rem;
+  color: #6c5ce7;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* AI Interaction */
+.dashboard-ai-interaction,
+.dashboard-ai-think {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboard-ai-button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-ai-button:hover {
+  background-color: #5a4ad1;
+}
+
+.dashboard-ai-think p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Notes Input */
+.dashboard-note-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard-note-textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.dashboard-note-button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-note-button:hover {
+  background-color: #5a4ad1;
+}
+
+/* Profile Link */
+.dashboard-link {
+  margin-top: 2rem;
+  color: #6c5ce7;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.dashboard-link:hover {
+  color: #5a4ad1;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.profile-link {
+  display: inline-block;
+  background-color: #6c5ce7; /* Purple background */
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover effect for profile link */
+.profile-link:hover {
+  background-color: #5a4ad1; /* Darker purple on hover */
+  transform: translateY(-3px); /* Move up slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+/* Calendar Section */
+.calendar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #6c5ce7; /* Same purple background as profile section */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.calendar-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-section h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Calendar Link */
+.calendar-link {
+  display: inline-block;
+  background-color: white; /* White background for button */
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover effect for calendar link */
+.calendar-link:hover {
+  background-color: #d8f5e3; /* Soft green background on hover */
+  transform: translateY(-3px); /* Move up slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+  color: #333; /* Text stays dark */
+}
+
+/* Libraries Section */
+.library-ai-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #6c5ce7; /* Same purple background as profile section */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.library-ai-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.library-ai-section h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Libraries Link */
+.library-link {
+  display: inline-block;
+  background-color: white; /* White background for button */
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover effect for libraries link */
+.library-link:hover {
+  background-color: #d8f5e3; /* Soft green background on hover */
+  transform: translateY(-3px); /* Move up slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+  color: #333; /* Text stays dark */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+    padding-top: 60px; /* Adjusted padding for smaller screens */
+  }
+
+  .dashboard-heading {
+    font-size: 2rem;
+  }
+
+  .dashboard-streak-display {
+    font-size: 1.25rem;
+  }
+
+  .dashboard-note-input {
+    width: 90%;
+  }
+
+  .dashboard-link {
+    font-size: 1rem;
+  }
+
+  .profile-section {
+    width: 100%;
+  }
+
+  .profile-link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-streak-display {
+    font-size: 1rem;
+  }
+
+  .dashboard-link {
+    font-size: 0.9rem;
+  }
+}

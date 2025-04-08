@@ -1,0 +1,83 @@
+/* Header Container */
+.header {
+  background-color: white; /* White background */
+  color: #333; /* Dark text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem; /* Add padding for spacing */
+  box-sizing: border-box;
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Styles */
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6C5CE7; /* Primary color */
+  margin: 0;
+}
+
+/* Navigation Styles */
+.header-nav {
+  display: flex;
+  gap: 1.5rem; /* Spacing between links */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Link and Button Styles */
+.header-link,
+.header-button {
+  color: #6C5CE7; /* Primary color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover Effects for Links */
+.header-link:hover {
+  background-color: #6C5CE7; /* Primary color */
+  color: white; /* White text on hover */
+}
+
+/* Logout Button Styles */
+.header-button {
+  background-color: transparent;
+  border: 2px solid #6C5CE7; /* Primary color */
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #6C5CE7; /* Primary color */
+}
+
+.header-button:hover {
+  background-color: #6C5CE7; /* Primary color */
+  color: white; /* White text on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 0.75rem; /* Reduce gap for smaller screens */
+    align-items: flex-start;
+  }
+
+  .header-title {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+}

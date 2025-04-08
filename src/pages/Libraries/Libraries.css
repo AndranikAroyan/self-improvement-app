@@ -1,0 +1,83 @@
+/* Unique Libraries Container */
+.unique-libraries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Unique Heading */
+  .unique-libraries-heading {
+    font-size: 2.5rem;
+    color: #6c5ce7;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Unique Library Item */
+  .unique-library-item {
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Unique Library Link */
+  .unique-library-link {
+    display: inline-block;
+    background-color: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for unique library link */
+  .unique-library-link:hover {
+    background-color: #5a4ad1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .unique-libraries-container {
+      padding: 1rem;
+    }
+  
+    .unique-libraries-heading {
+      font-size: 2rem;
+    }
+  
+    .unique-library-item {
+      width: 90%;
+    }
+  
+    .unique-library-link {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .unique-libraries-heading {
+      font-size: 1.5rem;
+    }
+  
+    .unique-library-link {
+      font-size: 0.9rem;
+    }
+  }
+  

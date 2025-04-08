@@ -1,0 +1,119 @@
+/* Profile Container */
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow inside the container */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Profile Title */
+.profile-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6C5CE7; /* Primary color */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  word-wrap: break-word; /* Prevent overflow */
+}
+
+/* Profile Form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1; /* Allow form to grow */
+  justify-content: flex-start; /* Start from the top */
+  margin-bottom: 20px; /* Add spacing to the bottom */
+}
+
+/* Form Input Styles */
+.profile-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-form input:focus {
+  outline: none;
+  border-color: #6C5CE7; /* Highlight input border on focus */
+}
+
+/* Save Button */
+.profile-form button {
+  padding: 0.75rem;
+  background-color: #6C5CE7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.profile-form button:hover {
+  background-color: #5a4ad1; /* Darker hover effect */
+}
+
+/* Go Back Button */
+.go-back-button {
+  padding: 0.75rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%; /* Full width */
+  text-align: center;
+  display: block;
+  text-decoration: none; /* Remove default link underline */
+}
+
+.go-back-button:hover {
+  background-color: #6C5CE7; /* Primary color */
+  color: white;
+}
+
+/* Prevent global body scrollbar */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable scrollbars */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+    margin: 1rem; /* Adjust margin for smaller screens */
+    min-height: auto; /* Remove full height requirement */
+  }
+
+  .profile-container h2 {
+    font-size: 1.5rem; /* Smaller title font */
+  }
+
+  .profile-form input {
+    font-size: 0.9rem; /* Smaller input text size */
+  }
+
+  .profile-form button {
+    font-size: 0.9rem; /* Smaller button font size */
+  }
+}
